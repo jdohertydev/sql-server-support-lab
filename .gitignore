@@ -1,0 +1,30 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+
+# SQL Server local database and backup files
+*.mdf
+*.ndf
+*.ldf
+*.bak
+*.trn
+
+# IDE / editor local state
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

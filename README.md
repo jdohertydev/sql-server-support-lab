@@ -58,6 +58,7 @@ The seed data deliberately contains several support-style conditions to investig
 
 ```text
 sql-server-support-lab/
+├── .gitignore
 ├── README.md
 ├── setup/
 │   ├── 00-create-database.sql
@@ -126,6 +127,16 @@ The project treats modification as a controlled step, not the first troubleshoot
 8. verify the final state.
 
 In a real application, direct database changes may bypass business rules, audit logging, caches or integrations. An approved application workflow or documented operational procedure should be preferred where one exists.
+
+## Security and privacy
+
+This repository contains only fictional learning data and deliberately does not include production data or credentials.
+
+Do not commit API keys, access tokens, passwords, private keys, production connection strings, real customer data, database backups or local SQL Server database files. The `.gitignore` excludes common local secret files, SQL Server database/back-up files, IDE state and temporary files as an additional safeguard.
+
+The sample email addresses use the reserved `.example` domain so that they cannot accidentally identify or route mail to real organisations.
+
+Git commit authorship remains associated with the GitHub account that owns this portfolio repository; that is intentional and is separate from application or database credentials.
 
 ## Learning status
 
